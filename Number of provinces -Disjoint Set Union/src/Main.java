@@ -59,10 +59,10 @@ public class Main {
         // 根据集合的等级进行合并
         if (level[i] < level[j]) {
             // 将等级较低的集合合并到等级较高的集合中
-            head[i] = head[j];
+            head[i] = j;
         } else if (level[i] > level[j]) {
             // 将等级较低的集合合并到等级较高的集合中
-            head[j] = head[i];
+            head[j] = i;
         } else if (level[i] == level[j]){
             // 如果两个集合等级相同，则任意选择一个作为合并后的集合，并提升其等级
             level[i]++;
