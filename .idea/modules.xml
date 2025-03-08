@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Number of provinces -greedy/Number of provinces -greedy.iml" filepath="$PROJECT_DIR$/Number of provinces -greedy/Number of provinces -greedy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Number of provinces -Disjoint Set Union/Number of provinces -Disjoint Set Union.iml" filepath="$PROJECT_DIR$/Number of provinces -Disjoint Set Union/Number of provinces -Disjoint Set Union.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java算法练习.iml" filepath="$PROJECT_DIR$/.idea/java算法练习.iml" />
     </modules>
   </component>
