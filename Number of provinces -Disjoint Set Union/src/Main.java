@@ -19,6 +19,7 @@ public class Main {
         for (int i = 0; i < cities; i++) {
             head[i] = i;
             level[i] = 1; // 初始化为1
+
         }
 
         for (int i = 0; i < cities; i++) {
