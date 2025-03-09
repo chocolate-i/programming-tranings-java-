@@ -38,9 +38,14 @@ public class Main {
         }
 
         // 当有三个或更多元素时，计算玩家一选择最右侧或最左侧元素时的最大得分
-        if (r - l >= 2) {
+        if (r - l >= 2) {//分情况讨论
+
             sright = arr[r] + Math.min(maxScore(arr, l, r - 2), maxScore(arr, l + 1, r - 1));
+            //如果玩家一选择最右侧元素，则玩家二有两种选择l  r-1，根据这两种选择分别计算剩余部分的得分，取最小值
+
+
             sleft = arr[l] + Math.min(maxScore(arr, l + 2, r), maxScore(arr, l + 1, r - 1));
+            //如果玩家一选择最左侧元素，则玩家二有两种选择，l+1 r,根据这两种选择分别计算剩余部分的得分，取最小值
         }
         // 返回左侧和右侧得分中的最大值
         return Math.max(sright, sleft);
