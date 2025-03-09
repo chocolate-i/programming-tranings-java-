@@ -19,31 +19,8 @@ public class Main {
         System.out.println(dp(arr));
     }
 
-    /**
-     * 动态规划方法，用于计算在给定数组中，玩家一是否能赢得玩家二
-     * 通过构建一个二维数组dp来存储玩家一相对于玩家二的得分差的最大值
-     * @param arr 给定的整数数组，代表每个元素的得分
-     * @return 如果玩家一能赢得玩家二，则返回true；否则返回false
-     */
-    static boolean dp(int[] arr){
-        // 数组的长度
-        int length=arr.length;
-        // 初始化一个二维数组用于动态规划
-        int [][]dp=new int[length][length];
-        // 初始化对角线元素，即只有一个元素时的情况时候，差值即为该元素
-        for (int i = 0; i <length ; i++) {
-            dp[i][i]=arr[i] ;
-        }
-        // 从右下角开始填充dp数组，计算所有可能的得分差的最大值
-        for (int i = length-1; i >=0 ; i--) {
-            for (int j = i+1; j <length ; j++) {
-                // 玩家一可以选择左边或右边的元素，选择使其与玩家二的得分差最大的策略
-                dp[i][j]=Math.max(arr[i]-dp[i+1][j],arr[j]-dp[i][j-1]);
-            }
-        }
-        // 如果玩家一的得分差最大值大于0，则玩家一可以赢得玩家二
-        return  dp[0][length-1]>0;
-    }
+
+
     /**
      * 计算给定数组中，玩家一从索引l到r的最大得分
      * @param arr 代表游戏得分的整数数组
@@ -91,6 +68,34 @@ public class Main {
      return  Math.max(sright, sleft);
     }
 
+
+    /**
+     * 动态规划方法，用于计算在给定数组中，玩家一是否能赢得玩家二
+     * 通过构建一个二维数组dp来存储玩家一相对于玩家二的得分差的最大值
+     * @param arr 给定的整数数组，代表每个元素的得分
+     * @return 如果玩家一能赢得玩家二，则返回true；否则返回false
+     */
+    static boolean dp(int[] arr){
+        // 数组的长度
+        int length=arr.length;
+        // 初始化一个二维数组用于动态规划
+        int [][]dp=new int[length][length];
+        // 初始化对角线元素，即只有一个元素时的情况时候，差值即为该元素
+        for (int i = 0; i <length ; i++) {
+            dp[i][i]=arr[i] ;
+        }
+        // 从右下角开始填充dp数组，计算所有可能的得分差的最大值
+        for (int i = length-1; i >=0 ; i--) {
+            for (int j = i+1; j <length ; j++) {
+                // 玩家一可以选择左边或右边的元素，选择使其与玩家二的得分差最大的策略
+                dp[i][j]=Math.max(arr[i]-dp[i+1][j],arr[j]-dp[i][j-1]);
+            }
+        }
+
+        // 如果玩家一的得分差最大值大于0，则玩家一可以赢得玩家二
+        return  dp[0][length-1]>0;
+
+    }
 
 }
 
