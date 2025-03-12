@@ -65,6 +65,7 @@ public class Main {
 
 
         int sleft = arr[l] -maxScore(arr, l +1, r);
+        //不断计算选择后的差值返回最终的差值
      return  Math.max(sright, sleft);
     }
 
