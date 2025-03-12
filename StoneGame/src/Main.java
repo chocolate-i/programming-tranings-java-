@@ -91,8 +91,10 @@ public class Main {
                 dp[i][j]=Math.max(arr[i]-dp[i+1][j],arr[j]-dp[i][j-1]);
             }
         }
+
         // 如果玩家一的得分差最大值大于0，则玩家一可以赢得玩家二
         return  dp[0][length-1]>0;
+
     }
 
 }
