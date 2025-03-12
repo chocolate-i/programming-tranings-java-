@@ -85,7 +85,7 @@ public class Main {
             dp[i][i]=arr[i] ;
         }
         // 从右下角开始填充dp数组，计算所有可能的得分差的最大值
-        for (int i = length-1; i >=0 ; i--) {
+        for (int i = length-2; i >=0 ; i--) {
             for (int j = i+1; j <length ; j++) {
                 // 玩家一可以选择左边或右边的元素，选择使其与玩家二的得分差最大的策略
                 dp[i][j]=Math.max(arr[i]-dp[i+1][j],arr[j]-dp[i][j-1]);
