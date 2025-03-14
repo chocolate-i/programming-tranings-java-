@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
-        System.out.println(maxMoney(new int[]{1,2,3,1},3));
-        System.out.println(maxMoney1(new int[]{1,2,3,1},4));
-        System.out.println(maxMoney2(new int[]{1,2,3,1},4));
+        int[] nums=new int[]{1,2,3,1};
+        System.out.println(maxMoney(nums,nums.length-1));
+        System.out.println(maxMoney1(nums,nums.length));
+        System.out.println(maxMoney2(nums,nums.length));
     }
 
       static int maxMoney(int [] nums,int index){
