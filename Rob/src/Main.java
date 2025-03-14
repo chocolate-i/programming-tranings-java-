@@ -20,6 +20,7 @@ public class Main {
         return Math.max(maxMoney(nums,index-2)+nums[index],maxMoney(nums,index-1));
 
     }
+
     static int maxMoney1(int [] nums,int length){
         // 动态规划
         if (nums==null)
