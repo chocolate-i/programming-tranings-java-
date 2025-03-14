@@ -2,6 +2,7 @@ public class Rob {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
         int[] nums=new int[]{1,2,3,1};
+
         //有环的情况下，第一个或者最后一个只能选其一
         System.out.println(maxMoney(nums,0,nums.length-2));
         System.out.println(maxMoney(nums,1,nums.length-1));
