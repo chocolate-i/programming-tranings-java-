@@ -3,6 +3,7 @@ public class Main {
         System.out.println("Hello, World!");
         System.out.println(maxMoney(new int[]{1,2,3,1},3));
         System.out.println(maxMoney1(new int[]{1,2,3,1},4));
+        System.out.println(maxMoney2(new int[]{1,2,3,1},4));
     }
 
       static int maxMoney(int [] nums,int index){
@@ -35,5 +36,26 @@ public class Main {
             dp[i]=Math.max(dp[i-2]+nums[i],dp[i-1]);
         }
             return  dp[length-1];
+    }
+    static int maxMoney2(int [] nums,int length){
+        // 动态规划 空间复杂度优化
+        if (nums==null)
+        {
+            return 0;
+        }
+        if (length == 1){
+            return nums[0];
+        }
+
+        int first=nums[0];
+        int second=nums[1];
+
+        for (int i = 2; i <length ; i++) {
+          int temp=Math.max(first+nums[i],second);
+          first=second;
+          second=temp;
+        }
+        return  second;
+
     }
 }
