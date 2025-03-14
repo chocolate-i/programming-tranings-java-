@@ -23,16 +23,20 @@ public class Main {
 
         // 遍历棋盘的每一行
         for (String row : board) {
+
             // 遍历每一行中的每个字符
             for (char c : row.toCharArray()) {
+
                 // 如果字符是'O'，则'O'的计数器加一
                 if (c == 'O') {
                     oCount++;
                 }
+
                 // 如果字符是'X'，则'X'的计数器加一
                 if (c == 'X') {
                     xCount++;
                 }
+
             }
         }
 
