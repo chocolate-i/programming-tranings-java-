@@ -42,7 +42,6 @@ public class Dota2Senate {
                 qd.offer(d + length);
             }
         }
-
         // 根据队列是否为空判断哪个政党胜利
         return qd.isEmpty() ? "Radiant" : "Dire";
     }
