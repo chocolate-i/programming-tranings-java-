@@ -53,7 +53,7 @@ public class Rob {
         }
 
         // 递归计算左右子树的结果
-        int[] leftResult = dfs(node.left);
+        int[] leftResult =  dfs(node.left);
         int[] rightResult = dfs(node.right);
 
         // 计算选择当前节点时的最大收益
@@ -65,5 +65,8 @@ public class Rob {
 
         // 返回结果数组
         return new int[]{withNodeValue, withoutNodeValue};
+
     }
+
+
 }
