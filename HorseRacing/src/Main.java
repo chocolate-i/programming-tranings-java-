@@ -22,10 +22,10 @@ public class Main {
      * @return 返回一个新的数组，包含A中对B具有优势的元素
      */
     public static int[] advantageCount(int[] A, int[] B) {
-        // 对B数组进行排序，以便后续比较
+        // 对B数组进行从小到大排序，以便后续比较
         int [] sortedB=B.clone();
         Arrays.sort(sortedB);
-        // 对A数组进行排序，以便后续比较
+        // 对A数组进行从小到大排序，以便后续比较
         Arrays.sort(A);
 
         // 使用哈希表和链表 挂载B中每个元素对应的优势元素
@@ -34,7 +34,7 @@ public class Main {
             bmap.put(b,new LinkedList<>());
         }
 
-        // 存储A中没有匹配到B中元素的情况
+        // 存储A中没有匹配到B中元素的情况  比B中的元素小的元素
         Deque<Integer> aq=new LinkedList<>();
         int j=0;
         // 遍历A数组，为B中的每个元素找到优势元素  挂载在bmap对应位置中
