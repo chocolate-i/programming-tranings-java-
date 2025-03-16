@@ -14,13 +14,16 @@ public class Rob {
         {
             return 0;
         }
+
          int first=nums[start];
         int second=Math.max(nums[start],nums[start+1]);
+
         for (int i = start+2; i <=end ; i++) {
             int temp=Math.max(first+nums[i],second);
             first=second;
             second=temp;
         }
+
         return  second;
     }
 
