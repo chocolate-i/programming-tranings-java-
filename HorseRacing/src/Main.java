@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
         int []A=new int[]{10,24,8,32};
-        int[]B=new int[]{13,25,25,11};
+        int []B=new int[]{13,25,25,11};
         // 打印advantageCount方法的结果
         System.out.println(Arrays.toString(advantageCount(A,B)));
     }
@@ -21,6 +21,7 @@ public class Main {
      * @param B 第二个数组，作为参考
      * @return 返回一个新的数组，包含A中对B具有优势的元素
      */
+
     public static int[] advantageCount(int[] A, int[] B) {
         // 对B数组进行从小到大排序，以便后续比较
         int [] sortedB=B.clone();
