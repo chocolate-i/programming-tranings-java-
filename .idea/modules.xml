@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/Valid Anagram/Valid Anagram.iml" filepath="$PROJECT_DIR$/Valid Anagram/Valid Anagram.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java算法练习.iml" filepath="$PROJECT_DIR$/.idea/java算法练习.iml" />
       <module fileurl="file://$PROJECT_DIR$/minSubArrayLen/minSubArrayLen.iml" filepath="$PROJECT_DIR$/minSubArrayLen/minSubArrayLen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reverseString/reverseString.iml" filepath="$PROJECT_DIR$/reverseString/reverseString.iml" />
     </modules>
   </component>
 </project>
