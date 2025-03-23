@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
-        int[][] matrix = new Main().generateMatrix(3);
+        int[][] matrix = new Main().generateMatrix(4);
         printMatrix(matrix); // 替换外部依赖为内置打印逻辑
     }
 
