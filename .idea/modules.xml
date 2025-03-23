@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/String Search/String Search.iml" filepath="$PROJECT_DIR$/String Search/String Search.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tic-tac-toe/Tic-tac-toe.iml" filepath="$PROJECT_DIR$/Tic-tac-toe/Tic-tac-toe.iml" />
       <module fileurl="file://$PROJECT_DIR$/Valid Anagram/Valid Anagram.iml" filepath="$PROJECT_DIR$/Valid Anagram/Valid Anagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generateMatrix/generateMatrix.iml" filepath="$PROJECT_DIR$/generateMatrix/generateMatrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java算法练习.iml" filepath="$PROJECT_DIR$/.idea/java算法练习.iml" />
       <module fileurl="file://$PROJECT_DIR$/minSubArrayLen/minSubArrayLen.iml" filepath="$PROJECT_DIR$/minSubArrayLen/minSubArrayLen.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverseString/reverseString.iml" filepath="$PROJECT_DIR$/reverseString/reverseString.iml" />
