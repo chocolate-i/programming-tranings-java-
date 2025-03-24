@@ -36,7 +36,7 @@ public class Main {
      * @return 弹出的元素值
      */
     public int pop() {
-        if (outStack.isEmpty()) {
+        if (outStack.isEmpty()) {//若输出栈为空时，将输入栈的元素倒入输出栈
             in2out();
         }
         return outStack.pop();
