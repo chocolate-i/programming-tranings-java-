@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Champagne tower/Champagne tower.iml" filepath="$PROJECT_DIR$/Champagne tower/Champagne tower.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dota2Senate/Dota2Senate.iml" filepath="$PROJECT_DIR$/Dota2Senate/Dota2Senate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HappyNumber/HappyNumber.iml" filepath="$PROJECT_DIR$/HappyNumber/HappyNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/HorseRacing/HorseRacing.iml" filepath="$PROJECT_DIR$/HorseRacing/HorseRacing.iml" />
       <module fileurl="file://$PROJECT_DIR$/IntersectionOfTwoArrays/IntersectionOfTwoArrays.iml" filepath="$PROJECT_DIR$/IntersectionOfTwoArrays/IntersectionOfTwoArrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/Number of provinces -Disjoint Set Union/Number of provinces -Disjoint Set Union.iml" filepath="$PROJECT_DIR$/Number of provinces -Disjoint Set Union/Number of provinces -Disjoint Set Union.iml" />
